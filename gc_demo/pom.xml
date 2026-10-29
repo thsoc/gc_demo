@@ -32,7 +32,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <!-- 这里填你的【全类名】，包名+类名 -->
+                            <!-- 这里填【全类名】，包名+类名 -->
                             <mainClass>com.my.CpuStress</mainClass>
                         </manifest>
                     </archive>
