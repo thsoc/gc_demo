@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e24e99f-254b-4f68-947f-516a7be23b59" name="更改" comment="test cpu">
+      <change afterPath="$PROJECT_DIR$/JVM运行中的问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jvm/gc/T15_FullGC_Problem01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,23 +57,24 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.gc_demo [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.gc_demo [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.gc_demo [package].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;应用程序.CpuStress.executor&quot;: &quot;Debug&quot;,
-    &quot;应用程序.HelloGC.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.gc_demo [clean].executor": "Run",
+    "Maven.gc_demo [install].executor": "Run",
+    "Maven.gc_demo [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "应用程序.CpuStress.executor": "Debug",
+    "应用程序.HelloGC.executor": "Run",
+    "应用程序.T15_FullGC_Problem01.executor": "Run"
   }
-}</component>
-  <component name="RunManager" selected="应用程序.CpuStress">
+}]]></component>
+  <component name="RunManager" selected="应用程序.T15_FullGC_Problem01">
     <configuration name="CpuStress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.my.CpuStress" />
       <module name="gc_demo" />
@@ -90,6 +95,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.my.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T15_FullGC_Problem01" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jvm.gc.T15_FullGC_Problem01" />
+      <module name="gc_demo" />
+      <option name="VM_PARAMETERS" value="-Xms20M -Xmx20M -XX:+UseParallelGC -XX:+HeapDumpOnOutOfMemoryError" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jvm.gc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,7 +147,31 @@
       <option name="project" value="LOCAL" />
       <updated>1793259989123</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test cpu">
+      <option name="closed" value="true" />
+      <created>1793260182010</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1793260182010</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test cpu">
+      <option name="closed" value="true" />
+      <created>1793260197969</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1793260197969</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test cpu">
+      <option name="closed" value="true" />
+      <created>1793260211407</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1793260211407</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
