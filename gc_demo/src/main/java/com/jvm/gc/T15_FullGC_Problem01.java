@@ -41,6 +41,7 @@ public class T15_FullGC_Problem01 {
             // do something
             executor.scheduleWithFixedDelay(() -> {
                 //do sth with info
+                //Lambda 表达式的捕获对象引用（Java 只有在你真正使用了外部变量时，才会去捕获它）
                 info.m();
 
             }, 2, 3, TimeUnit.SECONDS);

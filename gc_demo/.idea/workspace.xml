@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e24e99f-254b-4f68-947f-516a7be23b59" name="更改" comment="test cpu">
-      <change afterPath="$PROJECT_DIR$/JVM运行中的问题.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jvm/gc/T15_FullGC_Problem01.java" afterDir="false" />
+    <list default="true" id="6e24e99f-254b-4f68-947f-516a7be23b59" name="更改" comment="Jhat分析OOM">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jvm/gc/T15_FullGC_Problem01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jvm/gc/T15_FullGC_Problem01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,12 +167,21 @@
       <option name="project" value="LOCAL" />
       <updated>1793260211407</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Jhat分析OOM">
+      <option name="closed" value="true" />
+      <created>1793435031129</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1793435031129</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="test cpu" />
-    <option name="LAST_COMMIT_MESSAGE" value="test cpu" />
+    <MESSAGE value="Jhat分析OOM" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jhat分析OOM" />
   </component>
 </project>
