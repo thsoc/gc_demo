@@ -32,7 +32,9 @@
 13. 找到代码的问题
 
 # jhat命令使用
-使用jmap等方法生成java的堆文件后，使用其进行分析。
+使用jmap等方法生成java的堆文件后，使用其进行分析。  
+定位内存泄漏  
+分析内存占用大户
 ## 第一步：导出堆
 #jmap -dump:live,file=a.log pid  
 除了使用jmap命令，还可以通过以下方式：  
@@ -66,3 +68,96 @@ http://localhost:7000/
 ```
 5. 如果没找到就Exclude weak refs
 ![img_2.png](img_2.png)
+
+
+# MAT  
+## 下载
+版本1.16.x 起要求 JDK 17+  
+装一个 JDK 17 并用 -vm 指定  
+注意：MAT 的 JDK 版本必须 ≥ 生成 dump 的 JDK 版本  
+方式一： 下载地址：https://eclipse.dev/mat/download/  
+
+方式二：Eclipse 插件  
+
+## 安装  
+解压后，配置MemoryAnalyzer.ini  
+  
+原始文件：
+```text
+-startup
+plugins/org.eclipse.equinox.launcher_1.7.100.v20251111-0406.jar
+--launcher.library
+plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.3.0.v20260203-2149
+-vmargs
+--add-exports=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+-Xmx1024m
+```
+修改：  
+
+```text
+-startup
+plugins/org.eclipse.equinox.launcher_1.7.100.v20251111-0406.jar
+--launcher.library
+plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.3.0.v20260203-2149
+-vm
+/opt/mat-jdk/jdk-21.0.12.1/bin/java
+-vmargs
+--add-exports=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+-Xms512m
+-Xmx8g
+-XX:+UseG1GC
+-Dorg.eclipse.mat.ui.preferences.keep_unreachable_objects=true
+```
+windows:  
+```text
+-startup
+plugins/org.eclipse.equinox.launcher_1.7.100.v20251111-0406.jar
+--launcher.library
+plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.3.0.v20260203-2149
+-vm
+D:/Program Files/Java/jdk-21.0.12.1/bin/java.exe
+-vmargs
+--add-exports=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+-Xmx1024m
+-Xmx8g
+-XX:+UseG1GC
+-Dorg.eclipse.mat.ui.preferences.keep_unreachable_objects=true
+```
+
+注意：  
+```text
+-vm 和路径必须各占一行，不能写在一起
+必须放在 -vmargs 之前
+路径必须指向可执行文件本身，不能只写到目录
+不要加引号，即使路径有空格也不加（用不含空格的安装路径最省事）
+Windows 注意：路径指向 javaw.exe
+-XX:+UseG1GC 这个参数是MAT自己使用的，不是业务程序使用的垃圾回收器
+```
+
+## 使用  
+### 导入堆文件  
+open heap dump  
+![img_3.png](img_3.png)
+
+### 打开histogram  
+搜索业务类名称前缀（这里输入com.）  
+ps :   
+1. Shallow Heap ：对象自身占的内存（仅字段头+引用，不含引用对象）  
+2. Retained Heap ：该对象被回收后能连带释放的总内存（含其支配的所有对象）
+![img_4.png](img_4.png)
+
+### 右键打开  
+1. List objects → with incoming references：谁引用了它（往上追溯持有者）
+2. with outgoing references：它引用了谁（往下看内容）
+3. Merge Shortest Paths to GC Roots → exclude all phantom/weak/soft references：只看强引用链，直达根因
+![img_5.png](img_5.png
+
+### 右键打开
+Path To GC Roots → exclude all phantom/weak/soft etc. references  
+![img_6.png](img_6.png)
+
+
+### 查看树状图
+![img_7.png](img_7.png)
+
+

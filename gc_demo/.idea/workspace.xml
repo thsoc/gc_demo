@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e24e99f-254b-4f68-947f-516a7be23b59" name="更改" comment="Jhat分析OOM">
+    <list default="true" id="6e24e99f-254b-4f68-947f-516a7be23b59" name="更改" comment="添加注释">
+      <change afterPath="$PROJECT_DIR$/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_7.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jvm/gc/T15_FullGC_Problem01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jvm/gc/T15_FullGC_Problem01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JVM运行中的问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/JVM运行中的问题.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,23 +58,23 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.gc_demo [clean].executor": "Run",
-    "Maven.gc_demo [install].executor": "Run",
-    "Maven.gc_demo [package].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "应用程序.CpuStress.executor": "Debug",
-    "应用程序.HelloGC.executor": "Run",
-    "应用程序.T15_FullGC_Problem01.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gc_demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gc_demo [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gc_demo [package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;应用程序.CpuStress.executor&quot;: &quot;Debug&quot;,
+    &quot;应用程序.HelloGC.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.T15_FullGC_Problem01.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="应用程序.T15_FullGC_Problem01">
     <configuration name="CpuStress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.my.CpuStress" />
@@ -175,13 +180,22 @@
       <option name="project" value="LOCAL" />
       <updated>1793435031129</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加注释">
+      <option name="closed" value="true" />
+      <created>1793435328629</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1793435328629</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="test cpu" />
     <MESSAGE value="Jhat分析OOM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jhat分析OOM" />
+    <MESSAGE value="添加注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加注释" />
   </component>
 </project>
