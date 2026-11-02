@@ -32,6 +32,7 @@
 13. 找到代码的问题
 
 # jhat命令使用
+java -Xms20M -Xmx20M -XX:+UseParallelGC -XX:+HeapDumpOnOutOfMemoryError  
 使用jmap等方法生成java的堆文件后，使用其进行分析。  
 定位内存泄漏  
 分析内存占用大户
