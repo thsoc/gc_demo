@@ -1,7 +1,7 @@
 # 使用
 通常生产常开（开销不大）  
 
-java -Xms200M -Xmx200M -XX:StartFlightRecording=filename=/usr/project/app.jfr,maxsize=1G,maxage=24h,settings=default -jar gc_demo-1.0-SNAPSHOT.jar gc
+java -Xms200M -Xmx200M -XX:StartFlightRecording=filename=/usr/project/app.jfr,maxsize=1G,maxage=24h,settings=default,dumponexit=true -jar gc_demo-1.0-SNAPSHOT.jar gc
 
 常用参数
 - filename	    输出 .jfr 文件路径
