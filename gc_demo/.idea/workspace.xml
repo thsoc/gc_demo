@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e24e99f-254b-4f68-947f-516a7be23b59" name="更改" comment="JMC分析GC">
-      <change afterPath="$PROJECT_DIR$/分配担保.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/动态年龄.md" afterDir="false" />
+    <list default="true" id="6e24e99f-254b-4f68-947f-516a7be23b59" name="更改" comment="arthas下载">
+      <change afterPath="$PROJECT_DIR$/img_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_11.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arthas使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/arthas使用.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +209,23 @@
       <option name="project" value="LOCAL" />
       <updated>1793613145631</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="分配担保和动态年龄">
+      <option name="closed" value="true" />
+      <created>1793673762535</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1793673762535</updated>
+    </task>
+    <task id="LOCAL-00012" summary="arthas下载">
+      <option name="closed" value="true" />
+      <created>1793674160059</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1793674160059</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,6 +235,8 @@
     <MESSAGE value="添加注释" />
     <MESSAGE value="mat分析oom" />
     <MESSAGE value="JMC分析GC" />
-    <option name="LAST_COMMIT_MESSAGE" value="JMC分析GC" />
+    <MESSAGE value="分配担保和动态年龄" />
+    <MESSAGE value="arthas下载" />
+    <option name="LAST_COMMIT_MESSAGE" value="arthas下载" />
   </component>
 </project>
